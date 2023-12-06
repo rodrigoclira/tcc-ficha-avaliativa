@@ -19,7 +19,7 @@ const AppHeader = () => {
                 </CHeaderBrand>
                 <CHeaderNav className="d-none d-md-flex me-auto">
                     <CNavItem>
-                        <CNavLink to="/home" component={NavLink} color="fff">
+                        <CNavLink to="#" component={NavLink} color="fff">
                             Home
                         </CNavLink>
                     </CNavItem>
