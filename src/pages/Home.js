@@ -32,7 +32,14 @@ const Home = () => {
     const configure = (value, func) => {
 
         if (value) {
-            func(Number.parseFloat(value));
+            let parsedValue = Number.parseFloat(value);
+            if (parsedValue > 10){
+                parsedValue = 10;
+            }else if (parsedValue < 0){
+                parsedValue = 0;
+            }
+     
+            func(parsedValue);
         } else {
             func(0);
         }
